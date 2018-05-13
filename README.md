@@ -18,28 +18,39 @@ put on standard recommendations for package structure, development and testing.
 
 Download the template, either downloading it (green button top-right) or
 by cloning it (if you know `git` already). From the package root directory
-you should be able to use all the "functionalities", such as::
+you should be able to use all the "functionalities", such as:
 
     >>> from scispack import area_of_circle
     >>> area_of_circle(12.)
+    452.3893421169302
 
-What you probably want to do, however, is to try to install it using pip::
+What you probably want to do, however, is to try to install it using pip:
 
     $ pip install .
 
 This will install the package in your conda or pip environment and make it
 available everywhere. Also, it will give you access to the command line
-interface (``scispack --help``).
+interface.
 
 If you use this template for your own package, you should start with renaming
 all appearances of ``scispack`` in the project and then install your new
-package in development mode::
+package in development mode:
 
     $ pip install -e .
 
 This is much more flexible than ``pip install .``: instead of copying the
 package in your python PATH, ``pip install -e`` will create symbolic links
 to this folder, thus making all your changes available right away.
+
+## Command line interface
+
+The example ``setup.py`` shows how to add a so-called "entry point" for
+a script to be used as a command line programm. After installation,
+just type:
+
+    $ scispack --help
+
+To see the many functionalities it has to offer.
 
 ## Testing
 
@@ -49,6 +60,9 @@ the package, do:
     $ pytest .
 
 From the package root directory.
+
+## Package structure
+
 
 
 ## License
