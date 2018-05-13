@@ -42,3 +42,10 @@ def test_chucks_birthday(capsys):
     captured = capsys.readouterr()
     assert 'Chuck Norris' in captured.out
     assert 'today' in captured.out
+
+
+def test_area_circle(capsys):
+
+    cli_program(['-ac', 10])
+    captured = capsys.readouterr()
+    assert '314.15926' in captured.out

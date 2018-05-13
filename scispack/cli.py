@@ -10,6 +10,7 @@ Usage:
    -v, --version: print the installed version
    --say-hi [NAME]: say hi to [NAME]
    -cb, --chucks-birthday: give the birthday date of Chuck Norris
+   -ac, --area-circle [RADIUS]: compute the area of a circle
 """
 
 
@@ -51,6 +52,15 @@ def cli_program(args):
 
     if args[0] in ['-cb', '--chucks-birthday']:
         print(cfg.PARAMS['chuck_norris_birthday'])
+        return
+
+    if args[0] in ['-ac', '--area-circle']:
+        if len(args) != 2:
+            print('scispack ---area-circle needs a radius parameter!')
+            return
+        radius = float(args[1])
+        print('The area of a circle with radius {} '.format(radius) +
+              'is {}'.format(scispack.area_of_circle(radius)))
         return
 
 

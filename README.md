@@ -1,7 +1,7 @@
 # A simple scientific python package template
 
 **scispack** stands for "simple scientific package" or "super scientific
-package" depending on your mood today.
+package" depending on your current mood.
 
 It was written for the University of Innsbruck's
 [scientific programming](http://fabienmaussion.info/scientific_programming)
@@ -13,6 +13,11 @@ the [Python Packaging Authority](https://packaging.python.org/). My
 template doesn't include some of the overhead recommended for larger projects
 targeting to be published on [PyPi](https://pypi.org/): instead, the focus is
 put on standard recommendations for package structure, development and testing.
+
+This package provides a standard python library (``>>> import scispack``) as
+well as a command line interface (``$ scispack --help``). Of course you can
+skip the command line part easily by changing the ``entry_points`` in
+``setup.py``.
 
 ## HowTo
 
@@ -66,17 +71,17 @@ From the package root directory.
 #### Directory root (``./``)
 
 - ``.gitignore``: for git users only
-- ``LICENSE.txt``: [allways](https://help.github.com/articles/licensing-a-repository/) 
-  license your code
+- ``LICENSE.txt``: [always](https://help.github.com/articles/licensing-a-
+  repository/) license your code
 - ``README.md``: this page
-- ``setup.py``: this is what makes your package insallable by ``pip``. It contains 
-  a set of simple instructions regarding e.g. the name of the package, it's version
-  number, or where to find command line scripts
+- ``setup.py``: this is what makes your package insallable by ``pip``. It
+  contains a set of simple instructions regarding e.g. the name of the package,
+  its version number, or where to find command line scripts
   
 #### The actual package (``./scispack``)
 
 - ``__init__.py``: tells python that the directory is a package and enables
-  the  "dotted module names"  import syntax. It is often empty, but here
+  the  "dotted module names"  import syntax. It is often empty,fla but here
   we added some entry points to the package's API and the version string.
 - ``cfg.py``, ``utils.py`` and ``cli.py``: the modules
 - ``cli.py``: entry point for the command line interface 
@@ -84,8 +89,8 @@ From the package root directory.
 
 #### The tests (``./scispack/tests``)
 
-One test file pro module. Their name has to start with ``test_`` to be 
-detected by pytest.
+One test file pro module. Their name has to start with ``test_`` in order
+to be detected by pytest.
 
 ## License
 
