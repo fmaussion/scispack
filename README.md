@@ -63,7 +63,7 @@ From the package root directory.
 
 ## Package structure
 
-### Directory root ``./``
+#### Directory root (``./``)
 
 - ``.gitignore``: for git users only
 - ``LICENSE.txt``: [allways](https://help.github.com/articles/licensing-a-repository/) 
@@ -73,7 +73,7 @@ From the package root directory.
   a set of simple instructions regarding e.g. the name of the package, it's version
   number, or where to find command line scripts
   
-### The package ``./scispack``
+#### The actual package (``./scispack``)
 
 - ``__init__.py``: tells python that the directory is a package and enables
   the  "dotted module names"  import syntax. It is often empty, but here
@@ -82,7 +82,7 @@ From the package root directory.
 - ``cli.py``: entry point for the command line interface 
 - ``cfg.py``: container module for the package parameters and constants
 
-### Tests ``./scispack/tests``
+#### The tests (``./scispack/tests``)
 
 One test file pro module. Their name has to start with ``test_`` to be 
 detected by pytest.
