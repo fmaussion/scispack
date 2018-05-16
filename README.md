@@ -50,7 +50,7 @@ to this folder, thus making all your changes available right away.
 ## Command line interface
 
 The example ``setup.py`` shows how to add a so-called "entry point" for
-a script to be used as a command line programm. After installation,
+a script to be used as a command line program. After installation,
 just type:
 
     $ scispack --help
