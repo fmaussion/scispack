@@ -71,8 +71,7 @@ From the package root directory.
 #### Directory root (``./``)
 
 - ``.gitignore``: for git users only
-- ``LICENSE.txt``: [always](https://help.github.com/articles/licensing-a-
-  repository/) license your code
+- ``LICENSE.txt``: [always](https://help.github.com/articles/licensing-a-epository/) license your code
 - ``README.md``: this page
 - ``setup.py``: this is what makes your package insallable by ``pip``. It
   contains a set of simple instructions regarding e.g. the name of the package,
